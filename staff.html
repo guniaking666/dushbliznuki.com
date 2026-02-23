@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Склад ДЮСШ</title>
+
+  <!-- Шрифти -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <nav class="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Галерея</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div id="mobile" class="mobile">
+    <a href="index.html">Головна</a>
+    <a href="staff.html">Склад</a>
+    <a href="departments.html">Відділення</a>
+    <a href="honor.html">Дошка пошани</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="gallery.html">Галерея</a>
+  </div>
+</header>
+
+<section class="staff-section">
+  <div class="container">
+    <h1 class="section-title">Склад ДЮСШ</h1>
+
+    <div class="staff-grid">
+
+      <!-- ДИРЕКТОР -->
+      <div class="staff-card">
+        <img src="images/staff1.jpg" alt="">
+        <h3>Директор ДЮСШ</h3>
+        <p>Керує діяльністю школи, організовує навчально-тренувальний процес.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <!-- ЗАСТУПНИК -->
+      <div class="staff-card">
+        <img src="images/staff2.jpg" alt="">
+        <h3>Заступник директора</h3>
+        <p>Відповідає за організацію тренувального процесу та змагань.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <!-- ТРЕНЕРИ (КОПІЮЙ БЛОК І РЕДАГУЙ) -->
+      <div class="staff-card">
+        <img src="images/trainer1.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Проведення тренувань та підготовка спортсменів до змагань.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer2.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Робота з юними спортсменами, розвиток фізичних навичок.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer3.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Підготовка команд до участі у турнірах та чемпіонатах.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer4.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Індивідуальна робота зі спортсменами різного віку.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer5.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Розвиток технічних та фізичних якостей спортсменів.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer6.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Організація тренувального процесу та підготовка до стартів.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer7.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Проведення групових та індивідуальних занять.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer8.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Підготовка спортсменів до участі у змаганнях.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer9.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Формування спортивної дисципліни та командного духу.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+      <div class="staff-card">
+        <img src="images/trainer10.jpg" alt="">
+        <h3>Тренер</h3>
+        <p>Розвиток витривалості, сили та координації спортсменів.</p>
+        <span class="contact">📞 +380...</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  © ДЮСШ Близнюки
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobile").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
