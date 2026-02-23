@@ -468,8 +468,6 @@ h1, h2, h3, .logo{
   transition:0.3s;
 }
 
-.contact-icon span{
-  font-size:36px;
   margin-bottom:10px;
 }
 
@@ -488,4 +486,16 @@ h1, h2, h3, .logo{
   color:#cbd5f5;
   font-size:16px;
   line-height:1.6;
+}
+
+.contact-icon img{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  margin-bottom:10px;
+  filter:brightness(0) invert(1); /* білий колір */
+}
+
+.contact-icon:hover img{
+  filter:none; /* при ховері показує оригінальний колір */
 }
