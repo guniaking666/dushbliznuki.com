@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти | ДЮСШ Близнюки</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <nav class="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Галерея</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div id="mobile" class="mobile">
+    <a href="index.html">Головна</a>
+    <a href="staff.html">Склад</a>
+    <a href="departments.html">Відділення</a>
+    <a href="honor.html">Дошка пошани</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="gallery.html">Галерея</a>
+  </div>
+</header>
+
+<section class="contacts-section">
+  <div class="container">
+    <h1 class="section-title">Контакти</h1>
+
+    <div class="contacts-icons">
+
+      <!-- FACEBOOK -->
+      <a href="#" target="_blank" class="contact-icon">
+        <span>f</span>
+        <p>Facebook</p>
+      </a>
+
+      <!-- TIKTOK -->
+      <a href="#" target="_blank" class="contact-icon">
+        <span>t</span>
+        <p>TikTok</p>
+      </a>
+
+      <!-- EMAIL -->
+      <a href="mailto:bliz.sport.shkola@ukr.net" class="contact-icon">
+        <span>✉</span>
+        <p>Написати лист</p>
+      </a>
+
+    </div>
+
+    <!-- ПОШТОВА АДРЕСА -->
+    <div class="postal-address">
+      <p>
+        <strong>Поштова адреса:</strong><br>
+        64801, Харківська область,<br>
+        селище Близнюки,<br>
+        вул. Незалежності, буд. 12
+      </p>
+
+      <p style="margin-top:10px;">
+        <strong>Електронна пошта:</strong><br>
+        bliz.sport.shkola@ukr.net
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>© ДЮСШ Близнюки</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobile").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
