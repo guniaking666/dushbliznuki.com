@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Новини | ДЮСШ Близнюки</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад ДЮСШ</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Фотогалерея</a>
+    </nav>
+  </div>
+</header>
+
+<section class="news-section">
+  <div class="container">
+    <h1 class="section-title">Новини школи</h1>
+
+    <div class="news-grid">
+
+      <!-- Instagram пост -->
+      <div class="news-card">
+        <iframe src="https://www.instagram.com/p/POST_ID/embed"
+          frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+      </div>
+
+      <!-- Facebook пост -->
+      <div class="news-card">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=FACEBOOK_POST_URL&show_text=true"
+          width="100%" height="500" style="border:none;overflow:hidden"
+          scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+      <!-- Копіюй блоки нижче для нових постів -->
+
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
