@@ -406,59 +406,31 @@ h1, h2, h3, .logo{
   border-radius:10px;
 }
 
-/* ===== NEWS: INSTAGRAM ONLY ===== */
-.ig-grid{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:30px;
-  margin-top:30px;
+/* ===== CONTACTS PAGE ===== */
 
-  /* КЛЮЧОВЕ: щоб картки не тягнулись по висоті в рядку */
-  align-items:start;
-}
-
-.ig-card{
-  background:#020617;
-  border-radius:15px;
-  padding:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-
-  /* КЛЮЧОВЕ: центруємо embed */
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-}
-
-/* КЛЮЧОВЕ: ламаємо max-width інсти, щоб займало всю ширину картки */
-.ig-card .instagram-media{
-  margin:0 !important;
-  max-width:100% !important;
-  width:100% !important;
-}
-
-/* Мобілка: 1 колонка вниз */
-@media(max-width:768px){
-  .ig-grid{ grid-template-columns:1fr; }
-}
-
-/* ===== CONTACTS ===== */
-.contacts-section{
+.contacts-page{
   padding-top:120px;
-  padding-bottom:60px;
-  text-align:center;
+  padding-bottom:80px;
 }
 
+.contacts-layout{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:40px;
+}
+
+/* ИКОНКИ */
 .contacts-icons{
   display:flex;
-  justify-content:center;
-  gap:40px;
-  margin:40px 0;
+  gap:30px;
   flex-wrap:wrap;
+  justify-content:center;
 }
 
-.contact-icon{
-  width:140px;
-  height:140px;
+.contact-card{
+  width:150px;
+  height:150px;
   background:#020617;
   border-radius:20px;
   display:flex;
@@ -468,35 +440,44 @@ h1, h2, h3, .logo{
   transition:0.3s;
 }
 
-  margin-bottom:10px;
+.contact-card img{
+  width:44px;
+  height:44px;
+  margin-bottom:12px;
+  object-fit:contain;
+  filter:brightness(0) invert(1); /* ВСЕГДА БЕЛЫЕ */
 }
 
-.contact-icon p{
+.contact-card span{
   font-size:14px;
-  color:#cbd5f5;
+  color:#e5e7eb;
 }
 
-.contact-icon:hover{
-  background:#22c55e;
+.contact-card:hover{
   transform:translateY(-6px);
+  background:#22c55e;
 }
 
-.postal-address{
-  margin-top:30px;
+.contact-card:hover img{
+  filter:brightness(0) invert(1);
+}
+
+/* АДРЕСА */
+.contact-info{
+  text-align:center;
   color:#cbd5f5;
   font-size:16px;
   line-height:1.6;
 }
 
-.contact-icon img{
-  width:42px;
-  height:42px;
-  object-fit:contain;
-  margin-bottom:10px;
-  opacity:1;            /* завжди видно */
-  filter:none;          /* НЕ міняємо колір */
+.contact-info .email{
+  margin-top:12px;
 }
 
-.contact-icon:hover img{
-  filter:none; /* при ховері показує оригінальний колір */
+/* МОБИЛКА */
+@media(max-width:768px){
+  .contact-card{
+    width:140px;
+    height:140px;
+  }
 }
