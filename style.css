@@ -278,3 +278,100 @@ h1, h2, h3, .logo{
 @keyframes fall{
   to{ transform:translateY(120vh); }
 }
+
+/* ===== HONOR BOARD ===== */
+.honor-section{
+  padding-top:120px;
+  padding-bottom:60px;
+}
+
+.honor-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.honor-card{
+  background:#020617;
+  border-radius:15px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.3s;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.honor-card:hover{
+  transform:translateY(-8px) scale(1.03);
+}
+
+.honor-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.honor-card h3{
+  margin:15px 0 5px;
+  font-family:'Oswald', sans-serif;
+}
+
+.honor-card p{
+  color:#cbd5f5;
+  padding:0 15px 20px;
+  font-size:14px;
+}
+
+/* ===== MODAL ===== */
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+  padding:20px;
+}
+
+.modal-content{
+  background:#020617;
+  border-radius:15px;
+  max-width:600px;
+  width:100%;
+  padding:25px;
+  position:relative;
+  animation:fadeIn 0.3s ease;
+}
+
+.modal-content img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.modal-content h2{
+  margin-bottom:10px;
+  font-family:'Oswald', sans-serif;
+}
+
+.modal-content p, .modal-content li{
+  color:#cbd5f5;
+  font-size:15px;
+}
+
+.close{
+  position:absolute;
+  top:10px;
+  right:15px;
+  font-size:28px;
+  cursor:pointer;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:scale(0.9);}
+  to{opacity:1; transform:scale(1);}
+}
