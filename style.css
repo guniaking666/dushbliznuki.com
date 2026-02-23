@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(2,6,23,0.9);
+  backdrop-filter:blur(6px);
+  z-index:1000;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 0;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.menu{
+  display:flex;
+  gap:25px;
+}
+
+.menu a{
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#22c55e;
+}
+
+.burger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.burger span{
+  width:25px;
+  height:3px;
+  background:white;
+  border-radius:3px;
+}
+
+.mobile{
+  position:fixed;
+  top:70px;
+  left:0;
+  width:100%;
+  background:#020617;
+  display:none;
+  flex-direction:column;
+}
+
+.mobile a{
+  padding:15px 20px;
+  border-bottom:1px solid #111;
+}
+
+.show{
+  display:flex;
+}
+
+/* БІГАЮЧА СТРІЧКА */
+.marquee{
+  margin-top:70px;
+  overflow:hidden;
+  white-space:nowrap;
+  background:#020617;
+}
+
+.marquee-track{
+  display:inline-block;
+  animation:marquee 30s linear infinite;
+}
+
+.marquee img{
+  height:120px;
+  margin:10px 25px;
+  border-radius:10px;
+}
+
+@keyframes marquee{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:url('images/sport-bg.jpg') center/cover no-repeat;
+  padding-top:100px;
+}
+
+.hero-logo{
+  width:120px;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.6;
+}
+
+footer{
+  text-align:center;
+  padding:30px 0;
+  color:#94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu{display:none;}
+  .burger{display:flex;}
+  .hero h1{font-size:28px;}
+}
