@@ -405,3 +405,38 @@ h1, h2, h3, .logo{
   min-height:450px;
   border-radius:10px;
 }
+
+/* ===== NEWS: INSTAGRAM ONLY ===== */
+.ig-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:30px;
+  margin-top:30px;
+
+  /* КЛЮЧОВЕ: щоб картки не тягнулись по висоті в рядку */
+  align-items:start;
+}
+
+.ig-card{
+  background:#020617;
+  border-radius:15px;
+  padding:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+  /* КЛЮЧОВЕ: центруємо embed */
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+/* КЛЮЧОВЕ: ламаємо max-width інсти, щоб займало всю ширину картки */
+.ig-card .instagram-media{
+  margin:0 !important;
+  max-width:100% !important;
+  width:100% !important;
+}
+
+/* Мобілка: 1 колонка вниз */
+@media(max-width:768px){
+  .ig-grid{ grid-template-columns:1fr; }
+}
