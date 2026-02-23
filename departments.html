@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Відділення</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <nav class="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Галерея</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div id="mobile" class="mobile">
+    <a href="index.html">Головна</a>
+    <a href="staff.html">Склад</a>
+    <a href="departments.html">Відділення</a>
+    <a href="honor.html">Дошка пошани</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="gallery.html">Галерея</a>
+  </div>
+</header>
+
+<section class="container dept-list">
+  <div class="dept-btn" onclick="openSection('football')">⚽ Футбол</div>
+  <div class="dept-btn" onclick="openSection('volleyball')">🏐 Волейбол</div>
+  <div class="dept-btn" onclick="openSection('esport')">🎮 Кіберспорт</div>
+  <div class="dept-btn" onclick="openSection('power')">🏋️ Пауерліфтинг</div>
+  <div class="dept-btn" onclick="openSection('kettlebell')">🔔 Гирьовий спорт</div>
+  <div class="dept-btn" onclick="openSection('fishing')">🎣 Спортивна риболовля</div>
+</section>
+
+
+<!-- ФУТБОЛ -->
+<section id="football" class="section container">
+  <h2>Футбольне відділення</h2>
+  <p>Підготовка юних футболістів, участь у районних та обласних турнірах.</p>
+
+  <h3>Досягнення:</h3>
+  <ul>
+    <li>Чемпіонат області — 1 місце</li>
+    <li>Районний турнір — 2 місце</li>
+  </ul>
+
+  <h3>Тренери:</h3>
+  <p>Іваненко І.І., Петренко П.П.</p>
+
+  <div class="fall" style="left:10%">⚽</div>
+  <div class="fall" style="left:40%;animation-delay:2s">⚽</div>
+  <div class="fall" style="left:70%;animation-delay:5s">⚽</div>
+</section>
+
+
+<!-- ВОЛЕЙБОЛ -->
+<section id="volleyball" class="section container">
+  <h2>Волейбольне відділення</h2>
+  <p>Розвиток командної гри, участь у шкільних та обласних змаганнях.</p>
+
+  <h3>Досягнення:</h3>
+  <ul>
+    <li>Обласні змагання — 3 місце</li>
+  </ul>
+
+  <h3>Тренери:</h3>
+  <p>Сидоренко С.С.</p>
+
+  <div class="fall" style="left:20%">🏐</div>
+  <div class="fall" style="left:60%;animation-delay:3s">🏐</div>
+</section>
+
+
+<!-- КІБЕРСПОРТ -->
+<section id="esport" class="section container">
+  <h2>Відділення кіберспорту</h2>
+  <p>Підготовка команд з дисциплін CS2, розвиток тактики та командної гри.</p>
+
+  <h3>Досягнення:</h3>
+  <ul>
+    <li>Всеукраїнський турнір — 1 місце</li>
+  </ul>
+
+  <h3>Тренери:</h3>
+  <p>Тренер з кіберспорту</p>
+
+  <div class="fall" style="left:30%">🎮</div>
+  <div class="fall" style="left:70%;animation-delay:4s">🎮</div>
+</section>
+
+
+<!-- ПАУЕРЛІФТИНГ -->
+<section id="power" class="section container">
+  <h2>Пауерліфтинг</h2>
+  <p>Розвиток сили та витривалості, підготовка спортсменів до змагань.</p>
+
+  <div class="fall" style="left:50%">🏋️</div>
+</section>
+
+
+<!-- ГИРЬОВИЙ СПОРТ -->
+<section id="kettlebell" class="section container">
+  <h2>Гирьовий спорт</h2>
+  <p>Розвиток силових якостей та техніки роботи з гирями.</p>
+
+  <div class="fall" style="left:40%">🔔</div>
+</section>
+
+
+<!-- РИБОЛОВЛЯ -->
+<section id="fishing" class="section container">
+  <h2>Спортивна риболовля</h2>
+  <p>Участь у змаганнях та розвиток техніки спортивної риболовлі.</p>
+
+  <div class="fall" style="left:60%">🎣</div>
+</section>
+
+<footer>© ДЮСШ Близнюки</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobile").classList.toggle("show");
+}
+
+function openSection(id){
+  document.querySelectorAll(".section").forEach(sec=>sec.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
