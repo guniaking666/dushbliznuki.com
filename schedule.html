@@ -25,9 +25,7 @@
       <a href="gallery.html">Галерея</a>
     </nav>
 
-    <div class="burger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 
   <div id="mobile" class="mobile">
@@ -42,66 +40,241 @@
   </div>
 </header>
 
-<section class="schedule-page">
+<section class="schedule-wrap">
   <div class="container">
-
     <h1 class="section-title">Розклад занять</h1>
+    <p class="schedule-subtitle">Натисніть на день тижня — і одразу видно всі секції та час.</p>
 
-    <div class="schedule-grid">
+    <div class="week-grid">
 
-      <!-- ФУТБОЛ -->
-      <div class="schedule-card">
-        <h2>⚽ Футбол</h2>
-        <ul>
-          <li><strong>Вівторок:</strong> 12:00 – 21:00</li>
-          <li><strong>Четвер:</strong> 12:00 – 21:00</li>
-          <li><strong>Субота:</strong> 10:00 – 19:00</li>
-        </ul>
+      <!-- ПОНЕДІЛОК -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Понеділок</h2>
+          <span class="day-chip">Пн</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">🔔</span>
+            <div class="event-text">
+              <b>Гирьовий спорт</b>
+              <small>14:00 – 19:25</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏐</span>
+            <div class="event-text">
+              <b>Волейбол</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏋️</span>
+            <div class="event-text">
+              <b>Пауерліфтинг</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 20:00</small>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- ГИРЬОВИЙ СПОРТ -->
-      <div class="schedule-card">
-        <h2>🔔 Гирьовий спорт</h2>
-        <ul>
-          <li><strong>Понеділок:</strong> 14:00 – 19:25</li>
-          <li><strong>Середа:</strong> 14:00 – 19:25</li>
-          <li><strong>П’ятниця:</strong> 14:00 – 19:25</li>
-          <li><strong>Субота:</strong> 10:00 – 12:00</li>
-        </ul>
+      <!-- ВІВТОРОК -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Вівторок</h2>
+          <span class="day-chip">Вт</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">⚽</span>
+            <div class="event-text">
+              <b>Футбол</b>
+              <small>12:00 – 21:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 21:00</small>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- ВОЛЕЙБОЛ -->
-      <div class="schedule-card">
-        <h2>🏐 Волейбол</h2>
-        <ul>
-          <li><strong>Понеділок:</strong> 13:30 – 20:00</li>
-          <li><strong>Середа:</strong> 13:30 – 20:00</li>
-          <li><strong>П’ятниця:</strong> 13:30 – 20:00</li>
-        </ul>
+      <!-- СЕРЕДА -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Середа</h2>
+          <span class="day-chip">Ср</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">🔔</span>
+            <div class="event-text">
+              <b>Гирьовий спорт</b>
+              <small>14:00 – 19:25</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏐</span>
+            <div class="event-text">
+              <b>Волейбол</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏋️</span>
+            <div class="event-text">
+              <b>Пауерліфтинг</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 20:00</small>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- ПАУЕРЛІФТИНГ -->
-      <div class="schedule-card">
-        <h2>🏋️ Пауерліфтинг</h2>
-        <ul>
-          <li><strong>Понеділок:</strong> 13:30 – 20:00</li>
-          <li><strong>Середа:</strong> 13:30 – 20:00</li>
-          <li><strong>П’ятниця:</strong> 13:30 – 20:00</li>
-        </ul>
+      <!-- ЧЕТВЕР -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Четвер</h2>
+          <span class="day-chip">Чт</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">⚽</span>
+            <div class="event-text">
+              <b>Футбол</b>
+              <small>12:00 – 21:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 21:00</small>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- КІБЕРСПОРТ -->
-      <div class="schedule-card wide">
-        <h2>🎮 Кіберспорт</h2>
-        <ul>
-          <li><strong>Понеділок:</strong> 16:00 – 20:00</li>
-          <li><strong>Вівторок:</strong> 16:00 – 21:00</li>
-          <li><strong>Середа:</strong> 16:00 – 20:00</li>
-          <li><strong>Четвер:</strong> 16:00 – 21:00</li>
-          <li><strong>П’ятниця:</strong> 16:00 – 20:00</li>
-          <li><strong>Субота:</strong> 16:00 – 21:00</li>
-          <li><strong>Неділя:</strong> 16:00 – 21:00</li>
-        </ul>
+      <!-- П'ЯТНИЦЯ -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>П’ятниця</h2>
+          <span class="day-chip">Пт</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">🔔</span>
+            <div class="event-text">
+              <b>Гирьовий спорт</b>
+              <small>14:00 – 19:25</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏐</span>
+            <div class="event-text">
+              <b>Волейбол</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🏋️</span>
+            <div class="event-text">
+              <b>Пауерліфтинг</b>
+              <small>13:30 – 20:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 20:00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- СУБОТА -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Субота</h2>
+          <span class="day-chip">Сб</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">⚽</span>
+            <div class="event-text">
+              <b>Футбол</b>
+              <small>10:00 – 19:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🔔</span>
+            <div class="event-text">
+              <b>Гирьовий спорт</b>
+              <small>10:00 – 12:00</small>
+            </div>
+          </div>
+
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 21:00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- НЕДІЛЯ -->
+      <div class="day-card">
+        <div class="day-head">
+          <h2>Неділя</h2>
+          <span class="day-chip">Нд</span>
+        </div>
+
+        <div class="events">
+          <div class="event-pill">
+            <span class="event-icon">🎮</span>
+            <div class="event-text">
+              <b>Кіберспорт</b>
+              <small>16:00 – 21:00</small>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -112,9 +285,7 @@
 <footer>© ДЮСШ Близнюки</footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("mobile").classList.toggle("show");
-}
+function toggleMenu(){ document.getElementById("mobile").classList.toggle("show"); }
 </script>
 
 </body>
