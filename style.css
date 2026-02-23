@@ -493,7 +493,8 @@ h1, h2, h3, .logo{
   height:42px;
   object-fit:contain;
   margin-bottom:10px;
-  filter:brightness(0) invert(1); /* білий колір */
+  opacity:1;            /* завжди видно */
+  filter:none;          /* НЕ міняємо колір */
 }
 
 .contact-icon:hover img{
