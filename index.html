@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ДЮСШ Близнюки</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новини | ДЮСШ Близнюки</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 
     <nav class="menu">
       <a href="index.html">Головна</a>
-      <a href="staff.html">Керівництво</a>
+      <a href="staff.html">Склад</a>
       <a href="departments.html">Відділення</a>
       <a href="honor.html">Дошка пошани</a>
       <a href="news.html">Новини</a>
@@ -24,9 +25,7 @@
       <a href="gallery.html">Галерея</a>
     </nav>
 
-    <div class="burger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 
   <div id="mobile" class="mobile">
@@ -41,47 +40,40 @@
   </div>
 </header>
 
-<!-- Бігаюча стрічка фото -->
-<div class="marquee">
-  <div class="marquee-track">
-    <img src="images/1.jpg">
-    <img src="images/2.jpg">
-    <img src="images/3.jpg">
-    <img src="images/4.jpg">
-    <img src="images/5.jpg">
-    <img src="images/1.jpg">
-    <img src="images/2.jpg">
-    <img src="images/3.jpg">
-    <img src="images/4.jpg">
-    <img src="images/5.jpg">
-  </div>
-</div>
-
-<section class="hero">
+<section class="news-section">
   <div class="container">
-    <img src="images/logo.png" class="hero-logo">
+    <h1 class="section-title">Новини</h1>
 
-    <h1>Дитячо-юнацька спортивна школа Близнюків</h1>
+    <div class="ig-grid">
 
-    <p>
-      ДЮСШ Близнюків — це сучасна спортивна школа громади, що займається 
-      розвитком дитячого та юнацького спорту. Наші вихованці беруть участь 
-      у змаганнях, турнірах та чемпіонатах різних рівнів.
-      Основна мета школи — формування здорового покоління, розвиток 
-      фізичної культури, сили духу та спортивної майстерності.
-    </p>
+      <!-- Instagram пост 1 (міняєш тільки посилання) -->
+      <div class="ig-card">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/DTbCxI0jXxM/"
+          data-instgrm-version="14"></blockquote>
+      </div>
+
+      <!-- Instagram пост 2 -->
+      <div class="ig-card">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/PASTE_NEW_POST_HERE/"
+          data-instgrm-version="14"></blockquote>
+      </div>
+
+      <!-- Копіюєш ig-card вниз і вставляєш нові лінки -->
+
+    </div>
   </div>
 </section>
 
-<footer>
-  © ДЮСШ Близнюки
-</footer>
+<footer>© ДЮСШ Близнюки</footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("mobile").classList.toggle("show");
-}
+function toggleMenu(){ document.getElementById("mobile").classList.toggle("show"); }
 </script>
+
+<!-- ВАЖЛИВО: СКРИПТ INSTAGRAM ПІДКЛЮЧАЄМО 1 РАЗ НА СТОРІНЦІ -->
+<script async src="https://www.instagram.com/embed.js"></script>
 
 </body>
 </html>
