@@ -220,3 +220,61 @@ h1, h2, h3, .logo{
   color:#22c55e;
   font-weight:600;
 }
+
+/* ===== DEPARTMENTS ===== */
+.dept-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  margin-top:120px;
+}
+
+.dept-btn{
+  background:#020617;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:15px;
+  transition:0.3s;
+  cursor:pointer;
+  font-family:'Oswald', sans-serif;
+  font-size:18px;
+}
+
+.dept-btn:hover{
+  background:#22c55e;
+  transform:translateY(-5px);
+}
+
+.section{
+  display:none;
+  padding-top:120px;
+  padding-bottom:60px;
+  position:relative;
+}
+
+.section.active{
+  display:block;
+}
+
+.section h2{
+  font-size:32px;
+  margin-bottom:20px;
+  text-transform:uppercase;
+}
+
+.section ul{
+  margin:15px 0;
+  padding-left:20px;
+}
+
+.fall{
+  position:absolute;
+  top:-50px;
+  animation:fall 12s linear infinite;
+  opacity:0.07;
+  font-size:42px;
+}
+
+@keyframes fall{
+  to{ transform:translateY(120vh); }
+}
