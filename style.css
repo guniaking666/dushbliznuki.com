@@ -483,61 +483,104 @@ h1, h2, h3, .logo{
   }
 }
 
-/* ===== SCHEDULE PAGE ===== */
+/* ===== SCHEDULE (CALENDAR STYLE) ===== */
 
-.schedule-page{
+.schedule-wrap{
   padding-top:120px;
-  padding-bottom:80px;
+  padding-bottom:90px;
 }
 
-.schedule-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:30px;
-}
-
-.schedule-card{
-  background:#020617;
-  border-radius:18px;
-  padding:25px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-  transition:0.3s;
-}
-
-.schedule-card:hover{
-  transform:translateY(-6px);
-}
-
-.schedule-card h2{
-  font-family:'Oswald', sans-serif;
-  font-size:22px;
-  margin-bottom:15px;
-}
-
-.schedule-card ul{
-  list-style:none;
-  padding:0;
-}
-
-.schedule-card li{
-  padding:8px 0;
-  border-bottom:1px solid #1e293b;
+.schedule-subtitle{
+  text-align:center;
   color:#cbd5f5;
+  margin-top:-10px;
+  margin-bottom:35px;
   font-size:15px;
 }
 
-.schedule-card li:last-child{
-  border-bottom:none;
+.week-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:22px;
+  align-items:start;
 }
 
-/* КІБЕРСПОРТ — ШИРШИЙ БЛОК */
-.schedule-card.wide{
-  grid-column:span 2;
+.day-card{
+  background:#020617;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.38);
+  transition:0.25s;
 }
 
-/* МОБІЛКА */
+.day-card:hover{
+  transform:translateY(-6px);
+}
+
+.day-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+  padding-bottom:12px;
+  border-bottom:1px solid #1e293b;
+}
+
+.day-head h2{
+  font-family:'Oswald', sans-serif;
+  font-size:20px;
+  letter-spacing:0.5px;
+}
+
+.day-chip{
+  background:rgba(34,197,94,0.12);
+  color:#22c55e;
+  border:1px solid rgba(34,197,94,0.25);
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:12px;
+}
+
+.events{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.event-pill{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  background:#0b1224;
+  border:1px solid #16213a;
+  border-radius:14px;
+  padding:10px 12px;
+}
+
+.event-icon{
+  font-size:18px;
+  line-height:1;
+  margin-top:2px;
+}
+
+.event-text b{
+  display:block;
+  font-size:14px;
+  color:#e5e7eb;
+}
+
+.event-text small{
+  display:block;
+  margin-top:2px;
+  font-size:13px;
+  color:#cbd5f5;
+}
+
+/* АДАПТИВ */
+@media(max-width:1024px){
+  .week-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
 @media(max-width:768px){
-  .schedule-card.wide{
-    grid-column:span 1;
-  }
+  .week-grid{ grid-template-columns:1fr; }
 }
