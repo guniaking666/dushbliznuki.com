@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДЮСШ Близнюки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <nav class="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Галерея</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div id="mobile" class="mobile">
+    <a href="index.html">Головна</a>
+    <a href="staff.html">Склад</a>
+    <a href="departments.html">Відділення</a>
+    <a href="honor.html">Дошка пошани</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="gallery.html">Галерея</a>
+  </div>
+</header>
+
+<!-- Бігаюча стрічка фото -->
+<div class="marquee">
+  <div class="marquee-track">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+  </div>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <img src="images/logo.png" class="hero-logo">
+
+    <h1>Дитячо-юнацька спортивна школа Близнюків</h1>
+
+    <p>
+      ДЮСШ Близнюків — це сучасна спортивна школа громади, що займається 
+      розвитком дитячого та юнацького спорту. Наші вихованці беруть участь 
+      у змаганнях, турнірах та чемпіонатах різних рівнів.
+      Основна мета школи — формування здорового покоління, розвиток 
+      фізичної культури, сили духу та спортивної майстерності.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © ДЮСШ Близнюки
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobile").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
