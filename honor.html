@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дошка пошани | ДЮСШ Близнюки</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">ДЮСШ Близнюки</div>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Головна</a>
+      <a href="staff.html">Склад ДЮСШ</a>
+      <a href="departments.html">Відділення</a>
+      <a href="honor.html">Дошка пошани</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="schedule.html">Розклад</a>
+      <a href="gallery.html">Фотогалерея</a>
+    </nav>
+  </div>
+</header>
+
+<section class="honor-section">
+  <div class="container">
+    <h1 class="section-title">Дошка пошани</h1>
+
+    <div class="honor-grid">
+
+      <!-- СПОРТСМЕН 1 -->
+      <div class="honor-card" onclick="openModal('modal1')">
+        <img src="images/athlete1.jpg">
+        <h3>Іван Петренко</h3>
+        <p>Майстер спорту з пауерліфтингу</p>
+      </div>
+
+      <!-- СПОРТСМЕН 2 -->
+      <div class="honor-card" onclick="openModal('modal2')">
+        <img src="images/athlete2.jpg">
+        <h3>Олександр Коваль</h3>
+        <p>Чемпіон області з футболу</p>
+      </div>
+
+      <!-- ДОДАЙ ЩЕ КАРТКИ ПОТРІБНОЇ КІЛЬКОСТІ -->
+
+    </div>
+  </div>
+</section>
+
+<!-- МОДАЛЬНІ ВІКНА -->
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="images/athlete1.jpg">
+    <h2>Іван Петренко</h2>
+    <p><strong>Біографія:</strong> Вихованець ДЮСШ Близнюки, багаторазовий призер обласних та всеукраїнських змагань.</p>
+    <p><strong>Досягнення:</strong></p>
+    <ul>
+      <li>1 місце – Чемпіонат області 2022</li>
+      <li>2 місце – Чемпіонат України 2023</li>
+      <li>Майстер спорту України</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="images/athlete2.jpg">
+    <h2>Олександр Коваль</h2>
+    <p><strong>Біографія:</strong> Гравець футбольної команди ДЮСШ, капітан юнацької збірної.</p>
+    <p><strong>Досягнення:</strong></p>
+    <ul>
+      <li>Чемпіон області 2021</li>
+      <li>Кращий гравець турніру 2022</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+
+function openModal(id){
+  document.getElementById(id).style.display = "flex";
+}
+
+function closeModal(id){
+  document.getElementById(id).style.display = "none";
+}
+</script>
+
+</body>
+</html>
