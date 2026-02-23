@@ -482,3 +482,62 @@ h1, h2, h3, .logo{
     height:100px;
   }
 }
+
+/* ===== SCHEDULE PAGE ===== */
+
+.schedule-page{
+  padding-top:120px;
+  padding-bottom:80px;
+}
+
+.schedule-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:30px;
+}
+
+.schedule-card{
+  background:#020617;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.schedule-card:hover{
+  transform:translateY(-6px);
+}
+
+.schedule-card h2{
+  font-family:'Oswald', sans-serif;
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.schedule-card ul{
+  list-style:none;
+  padding:0;
+}
+
+.schedule-card li{
+  padding:8px 0;
+  border-bottom:1px solid #1e293b;
+  color:#cbd5f5;
+  font-size:15px;
+}
+
+.schedule-card li:last-child{
+  border-bottom:none;
+}
+
+/* КІБЕРСПОРТ — ШИРШИЙ БЛОК */
+.schedule-card.wide{
+  grid-column:span 2;
+}
+
+/* МОБІЛКА */
+@media(max-width:768px){
+  .schedule-card.wide{
+    grid-column:span 1;
+  }
+}
