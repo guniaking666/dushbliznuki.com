@@ -700,3 +700,168 @@ h1, h2, h3, .logo{
 @media(max-width:768px){
   .masonry{ columns:1; }
 }
+
+/* ===== TOURNAMENTS ===== */
+.tourn-page{
+  padding-top:120px;
+  padding-bottom:90px;
+}
+
+.tourn-subtitle{
+  text-align:center;
+  color:#cbd5f5;
+  margin-top:-10px;
+  margin-bottom:30px;
+  font-size:15px;
+}
+
+/* Cards grid */
+.tourn-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:22px;
+  align-items:start;
+}
+
+.tourn-card{
+  border:none;
+  cursor:pointer;
+  text-align:left;
+  background:#020617;
+  border-radius:18px;
+  overflow:hidden;
+  padding:0;
+  box-shadow:0 10px 25px rgba(0,0,0,0.38);
+  transition:0.25s;
+}
+
+.tourn-card:hover{
+  transform:translateY(-6px);
+}
+
+.tourn-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
+
+.tourn-meta{
+  padding:14px 16px 16px;
+}
+
+.tourn-meta h3{
+  font-family:'Oswald', sans-serif;
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.tourn-meta p{
+  color:#cbd5f5;
+  font-size:13px;
+}
+
+/* Modal */
+.tourn-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.82);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:2600;
+}
+
+.tourn-modal.show{ display:flex; }
+
+.tourn-modal-inner{
+  background:#020617;
+  border-radius:18px;
+  width:100%;
+  max-width:900px;
+  padding:22px;
+  position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  animation:fadeIn 0.22s ease;
+  max-height:85vh;
+  overflow:auto;
+}
+
+.tourn-close{
+  position:absolute;
+  top:10px;
+  right:12px;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:none;
+  cursor:pointer;
+  background:#0b1224;
+  color:#fff;
+  font-size:26px;
+}
+
+.tourn-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:10px 0 14px;
+}
+
+.badge{
+  border:1px solid #1e293b;
+  background:#0b1224;
+  color:#e5e7eb;
+  padding:8px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.tourn-desc{
+  color:#cbd5f5;
+  line-height:1.65;
+  font-size:15px;
+}
+
+.tourn-h3{
+  margin-top:16px;
+  font-family:'Oswald', sans-serif;
+  letter-spacing:0.3px;
+}
+
+/* Photos inside modal */
+.tourn-photos{
+  margin-top:12px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+  gap:12px;
+}
+
+.tourn-photos img{
+  width:100%;
+  height:130px;
+  object-fit:cover;
+  border-radius:14px;
+  cursor:pointer;
+  transition:0.2s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+.tourn-photos img:hover{
+  transform:scale(1.02);
+}
+
+/* Reuse lightbox from gallery if you already have it.
+   If not, this will still work because tournament.html includes the same structure. */
+
+@keyframes fadeIn{
+  from{ opacity:0; transform:scale(0.98); }
+  to{ opacity:1; transform:scale(1); }
+}
+
+@media(max-width:768px){
+  .tourn-card img{ height:160px; }
+  .tourn-modal-inner{ padding:18px; }
+}
